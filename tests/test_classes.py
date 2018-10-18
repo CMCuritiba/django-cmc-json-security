@@ -15,6 +15,7 @@ class ClassesTest(TestCase):
 			'id': 1,
 			'name': 'zacarias',
 		}
+		self.string = b'{"id": 1, "name": "zacarias"}'
 
 	def test_class_exists(self):
 		classe = CMCEncoder()
@@ -33,7 +34,4 @@ class ClassesTest(TestCase):
 		dec = CMCDecoder()
 		encoded = enc.encode(self.json_data)
 		decoded = dec.decode_response(encoded)
-		print('----------------------------------------2')
-		print(decoded.content)
-		#self.assertEqual(encoded.status_code, 200)
-		#self.assertEqual(decoded, self.json_data)		
+		self.assertEqual(decoded.content, self.string)		

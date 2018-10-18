@@ -20,8 +20,6 @@ class CMCDecoder():
 	def decode(self, encoded_data):
 		try:
 			result_json = json.loads(encoded_data.content.decode('utf-8'))
-			print('----------------------------------------1')
-			print(result_json)
 			token = result_json['token']
 			return jwt.decode(token, self.key, algorithms=['HS256'])
 		except:
@@ -29,9 +27,7 @@ class CMCDecoder():
 
 	def decode_response(self, encoded_data):
 		retorno = self.decode(encoded_data)
-		print('---------------------------------------------3')
-		print(retorno)
 		return HttpResponse(
-			retorno,
+			json.dumps(retorno),
 			status=200
 		)
