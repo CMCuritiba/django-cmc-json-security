@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: django-cmc-json-security
+Version: 0.1
+Summary: Biblioteca de segurança para sistemas da CMC
+Home-page: http://cmc.pr.gov.br/
+Author: Alexandre Odoni
+Author-email: aleodoni@gmail.com
+License: BSD License
+Description: Biblioteca segurança JSON para sistemas Django CMC
+        ====================================================================
+        
+        Biblioteca django que fornece segurança para sistemas da Câmara Municipal de Curitiba
+        
+        .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
+             :target: https://github.com/pydanny/cookiecutter-django/
+             :alt: Built with Cookiecutter Django
+        
+        .. image:: https://travis-ci.org/CMCuritiba/django-cmc-json-security.svg?branch=master
+            :target: https://travis-ci.org/CMCuritiba/django-cmc-json-security
+        
+        .. image:: https://codecov.io/gh/CMCuritiba/django-cmc-json-security/coverage.svg?branch=master
+            :target: https://codecov.io/gh/CMCuritiba/django-cmc-json-security/
+        
+        
+        :License: MIT
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
